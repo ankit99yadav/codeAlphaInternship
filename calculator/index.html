@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="display" readonly placeholder="0">
+        </div>
+        <div class="Buttons">
+            <div class="row row1">
+                <button class="calc-btn" data-value="AC">AC</button>
+                <button class="calc-btn" data-value="sqrt">&radic;</button>
+                <button class="calc-btn" data-value="DEL"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="calc-btn" id="spl-btn" data-value="/"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div class="row row2">
+                <button class="calc-btn" data-value="7"><i class="fa-solid fa-7"></i></button>
+                <button class="calc-btn" data-value="8"><i class="fa-solid fa-8"></i></button>
+                <button class="calc-btn" data-value="9"><i class="fa-solid fa-9"></i></button>
+                <button class="calc-btn" id="spl-btn" data-value="*"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="row row3">
+                <button class="calc-btn" data-value="4"><i class="fa-solid fa-4"></i></button>
+                <button class="calc-btn" data-value="5"><i class="fa-solid fa-5"></i></button>
+                <button class="calc-btn" data-value="6"><i class="fa-solid fa-6"></i></button>
+                <button class="calc-btn" id="spl-btn"  data-value="-"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="row row4">
+                <button class="calc-btn" data-value="1"><i class="fa-solid fa-1"></i></button>
+                <button class="calc-btn" data-value="2"><i class="fa-solid fa-2"></i></button>
+                <button class="calc-btn" data-value="3"><i class="fa-solid fa-3"></i></button>
+                <button class="calc-btn" id="spl-btn"  data-value="+"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="row row5">
+                <button class="calc-btn" data-value="00">00</button>
+                <button class="calc-btn" data-value="0">0</button>
+                <button class="calc-btn" data-value=".">.</button>
+                <button class="calc-btn" id="spl-btn" data-value="="><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
