@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <img src="playlist.svg" alt="playlist" id="playlist-img">
+      <h2>FEEL THE MUSIC</h2>
+      <img src="music.svg" alt="music" id="music-img">
+   </header>
+
+   <main>
+   <div class="left">
+        <div class="song-img">
+            <img src="giphy.gif" alt="gif" id="music-anime">
+        </div>
+        <div class="volume-div">
+            <div class="volume-img">
+            <img src="volume.svg" alt="volume" id="vol-svg">
+            </div>
+            <input type="range" id="volume-range" onchange="volume()">
+            </div>
+    </div>
+   <div class="right">
+    <div class="details">
+        <h3 id="song-name">Hamari Adhuri Kahani</h3>
+        <h5 id="song-Artist">Arijit Singh</h5>
+    </div>
+    <input type="range" id="Song-duration" onchange="duration()">
+    <div class="control-div">
+       <div class="prev-img">
+            <img src="previous.svg" alt="prev" id="previous-img" onclick="PreviousSongs()">
+       </div>
+        <div class="play-img">
+            <img src="play.svg" alt="play" id="play-pause"
+            onclick="playPauseSongs()">
+        </div>
+        <div class="next-img"> 
+            <img src="next.svg" alt="next" id="next-img" onclick="NextSongs()">
+        </div>
+
+    </div>
+   </div>
+   <div class="playlist">
+        <div class="playlist-song">
+            <img src="image1.jpeg" alt="img">
+            <div class="song-details">
+                <h2>Hamari Adhuri Kahani</h2>
+                <h5>Arijit singh</h5>
+            </div>
+
+        </div>
+        <div class="playlist-song">
+             <img src="images2.jpeg" alt="img">
+            <div class="song-details">
+                <h2>Tum ky mile</h2>
+                <h5>Arijit singh,shreya ghosal</h5>
+            </div>
+
+        </div>
+        <div class="playlist-song">
+        <img src="image3.jpeg" alt="img">
+            <div class="song-details">
+                <h2>sataranga</h2>
+                <h5>Arijit singh</h5>
+            </div>
+
+        </div>
+        <div class="playlist-song">
+             <img src="image4.jpeg" alt="img">
+            <div class="song-details">
+                <h2>Uska Hi Bana</h2>
+                <h5>Arijit singh</h5>
+            </div>
+
+        </div>
+   </div>
+   </main>
+    <script src="Script.js"></script>
+</body>
+</html>
